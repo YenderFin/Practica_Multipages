@@ -13,30 +13,54 @@ const { title } = Astro.props;
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="" />
+
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
 		<header class="bg-gradient-to-r from-purple-600 to-sky-500 h-16">
-
 		</header>
 		<menu class="bg-gradient-to-l from-red-600 to-blue-700 flex gap-4">
 			<li>
-				<a href="/" class="block hover:bg-white/30 rounded-md ">Inicio</a>
+				<a href="/" class="block hover:bg-white/30 rounded-md">Inicio</a
+				>
 			</li>
 			<li>
-				<a href="/quienes-somos" class="block hover:bg-white/30 rounded-md ">Quienes somos</a>
+				<a
+					href="/quienes-somos"
+					class="block hover:bg-white/30 rounded-md">Quienes somos</a
+				>
 			</li>
 			<li>
-				<a href="/organigrama" class="block hover:bg-white/30 rounded-md ">Organigrama</a>
+				<a
+					href="/organigrama"
+					class="block hover:bg-white/30 rounded-md">Organigrama</a
+				>
 			</li>
 			<li>
-				<a href="/noticias/clifford" class="block hover:bg-white/30 rounded-md ">Noticias</a>
+				<a
+					href="/noticias/clifford"
+					class="block hover:bg-white/30 rounded-md">Noticias</a
+				>
 			</li>
 			<li>
-				<a href="/contact" class="block hover:bg-white/30 rounded-md ">Contacto</a>
+				<a href="/contact" class="block hover:bg-white/30 rounded-md"
+					>Contacto</a
+				>
 			</li>
 		</menu>
 		<slot />
 	</body>
 </html>
+<style is:global>
+	.my-custom-class {
+		@apply bg-black text-white text-2xl;
+	}
+	@font-face {
+		font-family: "Myfont";
+		src: url("/fonts/DancingScript-VariableFont_wght.ttf");
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+</style>

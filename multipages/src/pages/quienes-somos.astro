@@ -1,8 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
     
     <Layout title="Welcome to CHAMOLANDIA" >
-        <h1 class="text-blue-500 text-6xl hover:animate-pulse">Yo soy Batman</h1>
+        <h1 class="text-blue-500 text-6xl hover:animate-pulse">Yo soy Batman <span><Icon class="text-6xl text-red-800" name="mdi:bat"  /></span></h1>
+        <div class="my-custom-class">
+            My Custom Class
+        </div>
     </Layout>

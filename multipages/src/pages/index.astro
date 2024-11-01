@@ -1,9 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout title="Welcome to CHAMOLANDIA." >
-	<h1 class="text-purple-700 mx-auto text-6xl">Slot en uso</h1>
+	<h1 class="text-purple-700 mx-auto text-6xl font-myfont">Slot en uso</h1>
+	<div class="my-custom-class">
+		My Custom Class
+		<Icon class='text-7xl text-red-600 hover:text-white' name="mdi:bat" />
+		
+	</div>
+	
+	<button>Non Exists <span><Icon name="line-md:account-delete"  class='text-7xl restas' /></span></button>
+	
 </Layout>
+
+
+
 
