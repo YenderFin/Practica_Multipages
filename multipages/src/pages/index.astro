@@ -44,7 +44,14 @@ import { Icon } from 'astro-icon/components';
 
 const jsConfetti = new JSConfetti()
 
-jsConfetti.addConfetti()
+jsConfetti.addConfetti({
+	confettiRadius:1,
+	confettiNumber: 1800,
+
+  
+})
+
+
 const emblaNode = document.querySelector('.embla')
 const options = { loop: true }
 const plugins = EmblaCarousel(emblaNode, options, [Autoplay()])
